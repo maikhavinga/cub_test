@@ -1,0 +1,13 @@
+cubonacciVersion: alpha1
+description: Example repository German Credit scoring for Cubonacci
+runtime:
+  name: python
+  version: 3.6.4
+optimization:
+  metric: accuracy
+  type: maximize
+  includeTrainMetrics: false
+validation:
+  type: kfold-crossvalidation
+  shuffle: true
+  folds: 5
